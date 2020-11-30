@@ -11,7 +11,7 @@ html {
 }
 
 body {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
 }
 
 a {
@@ -159,43 +159,34 @@ main .main-buttons button:hover {
     color: #222;
 }
 
-
-
-
-
 .container footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 0.8rem;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    font-size: 14px;
     background-color: #f2f2f2;
-    border: 1px solid #dadce0;
+    border-top: 1px solid #e4e4e4;
 }
 
-footer .left ul, footer .right ul {
+footer ul {
+    margin: 10px;
     list-style-type: none;
-}
-footer .left ul li, footer .right ul li {
-    display: inline-block;
-    margin: 0rem 1.6rem;
+    display: flex;
+    padding-left: 0;
 }
 
-/* .input-search {
-    font: inherit;
-    width: 55rem;
-    padding: 0.6rem 4rem;
-    border: 1px solid #dadce0;
-    border-radius: 2rem;
-    margin: 1.8rem;
-    outline: 0;
-} */
+footer .footer-left {
+    justify-self: left;
+}
+footer .footer-right {
+    justify-self: right;
+}
+footer ul li a {
+    margin: 10px;
+    color: #5f6368;
+}
 
-/* .button {
-    font: inherit;
-    padding: 0.8rem;
-    border: none;
-    border-radius: 1rem;
-    outline: 0;
-     outline-width: 0.2rem;
-    outline-color: #A9CEFF; 
-} */
