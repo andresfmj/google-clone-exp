@@ -9,42 +9,57 @@
 <body>
     <div class="container">
         <header>
-            <ul class="menu-header">
-                <li class="menu-header-item">Gmail</li>
-                <li class="menu-header-item">Imágenes</li>
-                <li class="menu-header-item">MENU</li>
-                <li class="menu-header-item">
-                    <button class="button">Iniciar Sesión</button>
-                </li>
-            </ul>
+            <nav>
+                <ul class="menu-header">
+                    <li class="menu-header-item"><a href="#">Gmail</a></li>
+                    <li class="menu-header-item"><a href="#">Imágenes</a></li>
+                    <li class="menu-header-item menu-icon"></li>
+                    <li class="menu-header-item">
+                        <a href="#">
+                            <img src="https://lh3.googleusercontent.com/ogw/ADGmqu-h8-NMj7_VX56VetZGrzRogfx8HTO9ttg-9lGk1Q=s32-c-mo" alt="Demo Google" />
+                        </a>
+                        <!-- <button class="button">Iniciar Sesión</button> -->
+                    </li>
+                </ul>
+            </nav>
         </header>
         <main>
-            <div class="google-search-form">
+            <section class="main-logo">
                 <img src="images/google-logo.png" alt="Google Logo" />
-                <input type="text" class="input-search" />
-                <div class="buttons-action">
-                    <button class="button">Google Search</button>
-                    <button class="button">I'm Feeling Lucky</button>
+            </section>
+            <section class="main-input">
+                <div class="main-input-container">
+                    <span class="ic_search"></span>
+                    <input type="text" class="input-search" />
+                    <a href="#" class="ic_microphone"></a>
                 </div>
-            </div>
+            </section>
+            <section class="main-buttons">
+                <div>
+                    <button>Buscar con Google</button>
+                </div>
+                <div>
+                    <button>Me siento con suerte</button>
+                </div>
+            </section>
         </main>
-        <footer>
+        <!-- <footer>
             <div class="left">
                 <ul>
-                    <li>Publicidad</li>
-                    <li>Negocios</li>
-                    <li>Acerca de</li>
-                    <li>Como funciona la busqueda</li>
+                    <li><a href="#">Publicidad</a></li>
+                    <li><a href="#">Negocios</a></li>
+                    <li><a href="#">Acerca de</a></li>
+                    <li><a href="#">Como funciona la busqueda</a></li>
                 </ul>
             </div>
             <div class="right">
                 <ul>
-                    <li>Privacidad</li>
-                    <li>Condiciones</li>
-                    <li>Preferencias</li>
+                    <li><a href="#">Privacidad</a></li>
+                    <li><a href="#">Condiciones</a></li>
+                    <li><a href="#">Preferencias</a></li>
                 </ul>
             </div>
-        </footer>
+        </footer> -->
     </div>
 </body>
 </html>

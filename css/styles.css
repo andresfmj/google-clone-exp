@@ -11,7 +11,12 @@ html {
 }
 
 body {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .container {
@@ -21,29 +26,142 @@ body {
 }
 
 .container header {
+    width: 100%;
+    height: 60px;
+}
+
+header nav {
     display: flex;
     justify-content: flex-end;
-    padding: 1.8rem 3rem;
 }
 
-header .menu-header {
+header nav .menu-header {
+    width: 250px;
+    height: auto;
+    display: flex;
     list-style-type: none;
+    justify-content: center;
+    align-items: center;
 }
 
-.menu-header .menu-header-item {
-    display: inline-block;
-    margin-right: 0.7rem;
+nav .menu-header a {
+    margin-right: 10px;
+    color: #000;
+}
+nav .menu-header .menu-icon {
+    background-image: url('../images/menu-icon.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+}
+
+nav .menu-header img {
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-top: 10px;
 }
 
 .container main {
     height: 100vh;
+
+    margin-top: 150px;
+    text-align: center;
 }
-main .google-search-form {
+
+main .main-logo {
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+main .main-logo img {
+    width: 300px;
+}
+
+main .main-input {
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+main .main-input-container {
+    width: 525px;
+    border-radius: 100px;
+    border: 1px solid #dfe1e5;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin: 8% 0;
 }
+
+main .main-input input {
+    width: 450px;
+    height: 40px;
+    padding-left: 10px;
+    border: none;
+    outline: 0;
+}
+
+main .main-input-container:hover {
+    box-shadow: 0 1px 6px 0 #20212447;
+    border-color: #dfe1e500;
+}
+
+main .main-input .ic_search {
+    background-image: url('../images/search.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    width: 13px;
+    height: 13px;
+    opacity: 0.6;
+}
+
+main .main-input .ic_microphone {
+    background-image: url('../images/googlemic.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    width: 24px;
+    height: 24px;
+
+    cursor: pointer;
+}
+
+main .main-buttons {
+    width: 530px;
+    margin: 0 auto;
+}
+
+main .main-buttons div {
+    display: inline-block;
+}
+
+main .main-buttons button {
+    height: 36px;
+    background-color: #f2f2f2;
+    border: none;
+    font-size: 14px;
+    color: #5f6368;
+    border-radius: 5px;
+    padding: 0 15px;
+    margin-right: 15px;
+    outline: 0;
+    cursor: pointer;
+}
+
+main .main-buttons button:hover {
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px #818181;
+    color: #222;
+}
+
+
+
+
 
 .container footer {
     display: flex;
@@ -62,7 +180,7 @@ footer .left ul li, footer .right ul li {
     margin: 0rem 1.6rem;
 }
 
-.input-search {
+/* .input-search {
     font: inherit;
     width: 55rem;
     padding: 0.6rem 4rem;
@@ -70,14 +188,14 @@ footer .left ul li, footer .right ul li {
     border-radius: 2rem;
     margin: 1.8rem;
     outline: 0;
-}
+} */
 
-.button {
+/* .button {
     font: inherit;
     padding: 0.8rem;
     border: none;
     border-radius: 1rem;
     outline: 0;
-    /* outline-width: 0.2rem;
-    outline-color: #A9CEFF; */
-}
+     outline-width: 0.2rem;
+    outline-color: #A9CEFF; 
+} */
