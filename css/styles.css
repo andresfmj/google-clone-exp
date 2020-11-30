@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: arial, sans-serif;
+    line-height: 2.8rem;
+}
+
+body {
+    font-size: 1.3rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.container header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.8rem 3rem;
+}
+
+header .menu-header {
+    list-style-type: none;
+}
+
+.menu-header .menu-header-item {
+    display: inline-block;
+    margin-right: 0.7rem;
+}
+
+.container main {
+    height: 100vh;
+}
+main .google-search-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 8% 0;
+}
+
+.container footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.8rem;
+    background-color: #f2f2f2;
+    border: 1px solid #dadce0;
+}
+
+footer .left ul, footer .right ul {
+    list-style-type: none;
+}
+footer .left ul li, footer .right ul li {
+    display: inline-block;
+    margin: 0rem 1.6rem;
+}
+
+.input-search {
+    font: inherit;
+    width: 55rem;
+    padding: 0.6rem 4rem;
+    border: 1px solid #dadce0;
+    border-radius: 2rem;
+    margin: 1.8rem;
+    outline: 0;
+}
+
+.button {
+    font: inherit;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 1rem;
+    outline: 0;
+    /* outline-width: 0.2rem;
+    outline-color: #A9CEFF; */
+}
